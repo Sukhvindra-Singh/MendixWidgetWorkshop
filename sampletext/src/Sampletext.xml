@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendixwithsukhi.sampletext.Sampletext" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Sampletext</name>
+    <description>learn about folder strucuture</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="sampleText" type="string" required="false">
+                <caption>Default value</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="booleanAttr" type="boolean" required="true" defaultValue="false">
+                <caption>Boolean Static</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="integerAttr" type="integer" required="true" defaultValue="10">
+                <caption>Integer Static</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="decimalAttr" type="decimal" required="true" defaultValue="12.0">
+                <caption>Decimal Static</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="enumerationAttr" type="enumeration" required="true" defaultValue="red">
+                <caption>Enum Static</caption>
+                <description>Sample text input</description>
+                <enumerationValues>
+                    <enumerationValue key="red">Red</enumerationValue>
+                    <enumerationValue key="blue">Blue</enumerationValue>
+                    <enumerationValue key="green">Green</enumerationValue>
+                </enumerationValues>
+            </property>
+
+            <property key="myAttribute" type="attribute">
+                <caption>My string</caption>
+                <description>My string setting</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+            <property key="myExpression" type="expression">
+                <caption>My string</caption>
+                <description>My string setting</description>
+                <returnType type="String" />
+            </property>
+            <property key="actionWithVariable" type="action">
+                <caption>On click</caption>
+                <description>Action to be performed when button is clicked</description>
+                <actionVariables>
+                    <actionVariable key="random" type="Decimal" caption="Random number between 0 and 1" />
+                </actionVariables>
+            </property>
+
+        </propertyGroup>
+    </properties>
+</widget>

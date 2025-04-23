@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendixwithsukhi.dynamicpropertytypesthree.DynamicPropertyTypesThree" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Dynamic Property Types Three</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="sampleText" type="string" required="false">
+                <caption>Default value</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="Datasource" type="datasource" isList="true">
+                <caption>Selectable Objects</caption>
+                <description></description>
+            </property>
+            <property key="reference" type="association" selectableObjects="Datasource">
+                <caption>Ref</caption>
+                <description></description>
+                <associationTypes>
+                    <associationType name="Reference"/>
+                    <associationType name="ReferenceSet"/>
+                </associationTypes>
+            </property>
+
+            <property key="myobject" type="object" isList="true">
+                <caption>My Object List</caption>
+                <description></description>
+                <properties>
+                    <propertyGroup caption="Object list group">
+                        <property key="key" type="string">
+                            <caption>Key</caption>
+                            <description></description>
+                        </property>
+                        <property key="value" type="string">
+                            <caption>Value</caption>
+                            <description></description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+
+            <property key="file" type="file" required="false">
+                <caption>File</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

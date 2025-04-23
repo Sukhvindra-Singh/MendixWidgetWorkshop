@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendixwithsukhi.dynamicpropertytypes.DynamicPropertyTypes" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Dynamic Property Types</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="myExpression" type="expression" required="false">
+                <caption>Expression Dynamic Input</caption>
+                <description>Sample text input</description>
+                <returnType type="String"/>
+            </property>
+            <property key="mytextTemplate" type="textTemplate" required="false">
+                <caption>TextTemplate Dynamic Input</caption>
+                <description></description>
+            </property>
+            <property key="myAction" type="action" required="false">
+                <caption>OnClick</caption>
+                <description></description>
+            </property>
+
+            <property key="myAttribute" type="attribute" required="false">
+                <caption>Attribute</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+
+            <property key="datasource" type="datasource" isList="true">
+                <caption>DataSource</caption>
+                <description></description>
+            </property>
+            <property key="selection" type="selection" dataSource="datasource">
+                <caption>OnClick</caption>
+                <description></description>
+                <selectionTypes>
+                    <selectionType name="None"/>
+                    <selectionType name="Single"/>
+                    <selectionType name="Multi"/>
+                </selectionTypes>
+            </property>
+
+            <property key="reference" type="association" selectableObjects="datasource">
+                <caption>Association</caption>
+                <description></description>
+                <associationTypes>
+                    <associationType name="Reference"/>
+                    <associationType name="ReferenceSet"/>
+                </associationTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
