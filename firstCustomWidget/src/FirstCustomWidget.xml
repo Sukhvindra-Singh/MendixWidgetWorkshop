@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendixwithsukhi.firstcustomwidget.FirstCustomWidget" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>First Custom Widget</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="booleanAttribute" type="attribute" required="false">
+                <caption>Attribute</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Boolean"/>
+                </attributeTypes>
+            </property>
+            <property key="selectionType" type="enumeration" defaultValue="radio">
+                <caption>Selection Type</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="radio">Radio</enumerationValue>
+                    <enumerationValue key="checkbox">Checkbox</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="trueLabel" type="string">
+                <caption>TrueLable</caption>
+                <description></description>
+            </property>
+            <property key="falseLabel" type="string">
+                <caption>FalseLabel</caption>
+                <description></description>
+            </property>
+            <property key="checkboxLabel" type="string">
+                <caption>CheckBoxLabel</caption>
+                <description></description>
+            </property>
+            <property key="onChange" type="action">
+                <caption>OnChange</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
